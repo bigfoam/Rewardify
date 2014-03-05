@@ -1,0 +1,46 @@
+[
+	{
+		"vID": 0,
+		"name": "TEST",
+		"vcID": 1,
+		"disclaimer": "test use",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vID": 1,
+		"name": "Amazon.com",
+		"vcID": 1,
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+
+	{
+		"vID": 2,
+		"name": "BP",
+		"vcID": 4,
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vID": 3,
+		"name": "Macy's",
+		"vcID": 3,
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vID": 4,
+		"name": "Hilton",
+		"vcID": 3,
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	}
+]

@@ -1,0 +1,17 @@
+[
+	{
+		"ccID": 7001,
+		"vcID": 5,
+		"rate": 0.05,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"ccID": 9001,
+		"vcID": 4,
+		"rate": 5,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	}
+]

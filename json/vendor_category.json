@@ -1,0 +1,57 @@
+[
+	{
+		"vcID": 1,
+		"name": "Book Store",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+
+	{
+		"vcID": 2,
+		"name": "Grocery",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vcID": 3,
+		"name": "Department Store",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vcID": 4,
+		"name": "Gas",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vcID": 5,
+		"name": "Movie",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vcID": 6,
+		"name": "Hotel",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"vcID": 7,
+		"name": "Food",
+		"disclaimer": "",
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	}
+]

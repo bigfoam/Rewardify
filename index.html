@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sticker</title>
+	
+	<meta charset="UTF-8">
+    <meta name="author" content="Xiang Mao" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!--, height=device-height(cannot add), target-densitydpi=device-dpi-->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<!--<meta name="apple-mobile-web-app-status-bar-style" content="black"/>-->
+
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css"/>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/db_create.js"></script>
+	<script type="text/javascript" src="js/db_sync.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<script>
+	
+	$("#login").bind("pagebeforeshow", function() {
+		//if user account in db, login directly
+		//when login, detect data availablility and warns "No data connection, app will work on local reference?"
+	});
+
+	</script>
+	
+</head>
+
+<body onload="init()">
+
+
+<div data-role="page" id="tmp" data-title="New User">
+
+<div id="tmp"></div>
+<div id="tmp2"></div>
+<div id="docs"></div>
+
+<button onclick='$.mobile.changePage("#login");'>JUMP</button>
+<button onclick='displayData()'>display doc</button>
+</div>
+
+<!----------------------------------------------------------------->
+<!-- Login Page -->
+<!----------------------------------------------------------------->
+<div data-role="page" id="login" data-title="Existing User">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+		
+		<h1>
+            <!-- <img src="" alt="" height="30" /> -->
+            App Name
+        </h1>
+
+	</div>
+
+        
+    <div data-role="content">
+	
+    	<input type="text" id="username" placeholder="Username" />
+        
+        <input type="password" id="password" placeholder="Password" />
+        
+        <p>
+            <a href="#wallet" data-role="button" data-inline="true" data-theme="b">Log in</a>
+            <a href="#" data-role="button" data-inline="true">Register</a>
+        </p>
+	    
+	    <div style="clear:both; display:block; height:0px"></div>
+
+	</div>
+        
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		
+        <h6 style="font-size: 10px;">
+            Copyright: &copy;Sticker 2013
+        </h6> 
+        
+	</div>
+	
+</div>
+
+
+<!----------------------------------------------------------------->
+<!-- Wallet Page -->
+<!----------------------------------------------------------------->
+<div data-role="page" id="wallet" data-title="My Wallet">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+		
+		<h1>
+            <!-- <img src="" alt="" height="30" /> -->
+            App Name
+        </h1>
+
+	</div>
+
+        
+    <div data-role="content" style="padding:0px; width:100%">
+    		
+		<p>My Wallet</p>
+	    
+	    <div style="clear:both; display:block; height:0px"></div>
+
+	</div>
+        
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#" data-icon="grid">Wallet</a></li> <!--data-transition="fade"-->
+                <li><a href="#shopping" data-icon="search">Advice</a></li>
+                <li><a href="#cardpool" data-icon="info">Card Pool</a></li>
+            </ul>
+        </nav>  
+        
+        <h6 style="font-size: 10px;">
+            Copyright: &copy;Sticker 2013
+        </h6> 
+        
+	</div>
+	
+</div>
+
+
+<!----------------------------------------------------------------->
+<!-- Advice Page -->
+<!----------------------------------------------------------------->
+<div data-role="page" id="shopping" data-title="Shopping Advices">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+		
+		<h1>
+            <!-- <img src="" alt="" height="30" /> -->
+            App Name
+        </h1>
+
+	</div>
+
+        
+    <div data-role="content" style="padding:0px; width:100%">
+    		
+		<p>*We only offer card usage suggestion for online vendor currently.</p>
+	    
+	    <div style="clear:both; display:block; height:0px"></div>
+
+	</div>
+        
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#wallet" data-icon="grid">Wallet</a></li> <!--data-transition="fade"-->
+                <li><a href="#" data-icon="search">Advice</a></li>
+                <li><a href="#cardpool" data-icon="info">Card Pool</a></li>
+            </ul>
+        </nav>  
+        
+        <h6 style="font-size: 10px;">
+            Copyright: &copy;Sticker 2013
+        </h6> 
+        
+	</div>
+	
+</div>
+
+
+
+<!----------------------------------------------------------------->
+<!-- Wallet Page -->
+<!----------------------------------------------------------------->
+<div data-role="page" id="cardpool" data-title="All Cards">
+	
+	<div data-role="header" data-position="fixed" data-theme="b">
+		
+		<h1>
+            <!-- <img src="" alt="" height="30" /> -->
+            App Name
+        </h1>
+
+	</div>
+
+        
+    <div data-role="content" style="padding:0px; width:100%">
+    		
+		<p>All cards</p>
+	    
+	    <div style="clear:both; display:block; height:0px"></div>
+
+	</div>
+        
+
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		
+        <nav data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#wallet" data-icon="grid">Wallet</a></li> <!--data-transition="fade"-->
+                <li><a href="#shopping" data-icon="search">Advice</a></li>
+                <li><a href="#" data-icon="info">Card Pool</a></li>
+            </ul>
+        </nav>  
+        
+        <h6 style="font-size: 10px;">
+            Copyright: &copy;Sticker 2013
+        </h6> 
+        
+	</div>
+	
+</div>
+
+</body>
+</html>

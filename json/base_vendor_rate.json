@@ -1,0 +1,41 @@
+[
+	{
+		"ccID": 3001,
+		"vID": 0,
+		"rate": 0.02,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"ccID": 7001,
+		"vID": 0,
+		"rate": 0.03,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"ccID": 7002,
+		"vID": 0,
+		"rate": 3,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"ccID": 9001,
+		"vID": 0,
+		"rate": 4,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	},
+	
+	{
+		"ccID": 9001,
+		"vID": 1,
+		"rate": 2,
+		"update_time": "2013-08-06 23:34:00",
+		"deleted": 0
+	}
+]
